@@ -1,0 +1,105 @@
+===================================================================
+ Info                                                              
+===================================================================
+           PID: 1808 (caja)
+           UID: 1000 (pooka)
+           GID: 1000 (pooka)
+        Signal: 11 (SEGV)
+     Timestamp: Thu 2020-07-02 12:47:04 CEST (3 days ago)
+  Command Line: caja --sm-client-id 1088bd773e76f20337159320190992981700000012580036 --sm-client-state-file /home/pooka/.config/session-state/caja-1593685069.desktop
+    Executable: /usr/bin/caja
+ Control Group: /user.slice/user-1000.slice/session-c1.scope
+          Unit: session-c1.scope
+         Slice: user-1000.slice
+       Session: c1
+     Owner UID: 1000 (pooka)
+       Boot ID: 1bba77530fe84da4878b39c4fffc457f
+    Machine ID: fede3597f8724a62b7726a319d60a6bc
+      Hostname: mint193
+       Storage: /var/lib/systemd/coredump/core.caja.1000.1bba77530fe84da4878b39c4fffc457f.1808.1593686824000000.lz4 (inaccessible)
+       Message: Process 1808 (caja) of user 1000 dumped core.
+                
+                Stack trace of thread 1808:
+                #0  0x0000564220dc0527 fm_list_model_get_sort_column_id_from_attribute (caja)
+                #1  0x0000564220daa2f7 n/a (caja)
+                #2  0x00007fb7538b510d g_closure_invoke (libgobject-2.0.so.0)
+                #3  0x00007fb7538c805e n/a (libgobject-2.0.so.0)
+                #4  0x00007fb7538d0715 g_signal_emit_valist (libgobject-2.0.so.0)
+                #5  0x00007fb7538d112f g_signal_emit (libgobject-2.0.so.0)
+                #6  0x00007fb753c0e102 n/a (libgio-2.0.so.0)
+                #7  0x00007fb74cf3adae ffi_call_unix64 (libffi.so.6)
+                #8  0x00007fb74cf3a71f ffi_call (libffi.so.6)
+                #9  0x00007fb7538b5ced g_cclosure_marshal_generic_va (libgobject-2.0.so.0)
+                #10 0x00007fb7538b5346 n/a (libgobject-2.0.so.0)
+                #11 0x00007fb7538d03cd g_signal_emit_valist (libgobject-2.0.so.0)
+                #12 0x00007fb7538d112f g_signal_emit (libgobject-2.0.so.0)
+                #13 0x00007fb753c0e8d8 n/a (libgio-2.0.so.0)
+                #14 0x00007fb753c0923f n/a (libgio-2.0.so.0)
+                #15 0x00007fb7535d9285 g_main_context_dispatch (libglib-2.0.so.0)
+                #16 0x00007fb7535d9650 n/a (libglib-2.0.so.0)
+                #17 0x00007fb7535d96dc g_main_context_iteration (libglib-2.0.so.0)
+                #18 0x00007fb753b9fefd g_application_run (libgio-2.0.so.0)
+                #19 0x0000564220d4a0d0 main (caja)
+                #20 0x00007fb751e86b97 __libc_start_main (libc.so.6)
+                #21 0x0000564220d4a14a _start (caja)
+                
+                Stack trace of thread 1885:
+                #0  0x00007fb751f79bf9 __GI___poll (libc.so.6)
+                #1  0x00007fb7535d95c9 n/a (libglib-2.0.so.0)
+                #2  0x00007fb7535d96dc g_main_context_iteration (libglib-2.0.so.0)
+                #3  0x00007fb7535d9721 n/a (libglib-2.0.so.0)
+                #4  0x00007fb753601175 n/a (libglib-2.0.so.0)
+                #5  0x00007fb7522646db start_thread (libpthread.so.0)
+                #6  0x00007fb751f8688f __clone (libc.so.6)
+                
+                Stack trace of thread 1922:
+                #0  0x00007fb751f79bf9 __GI___poll (libc.so.6)
+                #1  0x00007fb7535d95c9 n/a (libglib-2.0.so.0)
+                #2  0x00007fb7535d96dc g_main_context_iteration (libglib-2.0.so.0)
+                #3  0x00007fb74668436d n/a (libdconfsettings.so)
+                #4  0x00007fb753601175 n/a (libglib-2.0.so.0)
+                #5  0x00007fb7522646db start_thread (libpthread.so.0)
+                #6  0x00007fb751f8688f __clone (libc.so.6)
+                
+                Stack trace of thread 1891:
+                #0  0x00007fb751f79bf9 __GI___poll (libc.so.6)
+                #1  0x00007fb7535d95c9 n/a (libglib-2.0.so.0)
+                #2  0x00007fb7535d9962 g_main_loop_run (libglib-2.0.so.0)
+                #3  0x00007fb753bcc276 n/a (libgio-2.0.so.0)
+                #4  0x00007fb753601175 n/a (libglib-2.0.so.0)
+                #5  0x00007fb7522646db start_thread (libpthread.so.0)
+                #6  0x00007fb751f8688f __clone (libc.so.6)
+                
+                Stack trace of thread 7042:
+                #0  0x00007fb751f80839 syscall (libc.so.6)
+                #1  0x00007fb75361f87a g_cond_wait_until (libglib-2.0.so.0)
+                #2  0x00007fb7535ac571 n/a (libglib-2.0.so.0)
+                #3  0x00007fb753601b14 n/a (libglib-2.0.so.0)
+                #4  0x00007fb753601175 n/a (libglib-2.0.so.0)
+                #5  0x00007fb7522646db start_thread (libpthread.so.0)
+                #6  0x00007fb751f8688f __clone (libc.so.6)
+                
+                Stack trace of thread 7057:
+                #0  0x00007fb751f80839 syscall (libc.so.6)
+                #1  0x00007fb75361f87a g_cond_wait_until (libglib-2.0.so.0)
+                #2  0x00007fb7535ac571 n/a (libglib-2.0.so.0)
+                #3  0x00007fb753601b14 n/a (libglib-2.0.so.0)
+                #4  0x00007fb753601175 n/a (libglib-2.0.so.0)
+                #5  0x00007fb7522646db start_thread (libpthread.so.0)
+                #6  0x00007fb751f8688f __clone (libc.so.6)
+===================================================================
+ GDB Log                                                           
+===================================================================
+"/tmp/mintreport/crash/CoreDump" is not a core dump: File format not recognized
+
+===================================================================
+ GDB Backtrace                                                     
+===================================================================
+"/tmp/mintreport/crash/CoreDump" is not a core dump: File format not recognized
+No stack.
+
+===================================================================
+ GDB Backtrace (all threads)                                       
+===================================================================
+"/tmp/mintreport/crash/CoreDump" is not a core dump: File format not recognized
+No stack.
